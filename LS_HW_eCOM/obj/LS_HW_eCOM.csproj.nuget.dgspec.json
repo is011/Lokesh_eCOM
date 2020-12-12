@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proffesional\\Code Heap\\LS_HW_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj": {}
+    "D:\\Proffesional\\Code Heap\\Lokesh_eCOM\\Lokesh_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj": {}
   },
   "projects": {
-    "D:\\Proffesional\\Code Heap\\LS_HW_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj": {
+    "D:\\Proffesional\\Code Heap\\Lokesh_eCOM\\Lokesh_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proffesional\\Code Heap\\LS_HW_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj",
+        "projectUniqueName": "D:\\Proffesional\\Code Heap\\Lokesh_eCOM\\Lokesh_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj",
         "projectName": "LS_HW_eCOM",
-        "projectPath": "D:\\Proffesional\\Code Heap\\LS_HW_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj",
+        "projectPath": "D:\\Proffesional\\Code Heap\\Lokesh_eCOM\\Lokesh_eCOM\\LS_HW_eCOM\\LS_HW_eCOM.csproj",
         "packagesPath": "C:\\Users\\lokesh\\.nuget\\packages\\",
-        "outputPath": "D:\\Proffesional\\Code Heap\\LS_HW_eCOM\\LS_HW_eCOM\\obj\\",
+        "outputPath": "D:\\Proffesional\\Code Heap\\Lokesh_eCOM\\Lokesh_eCOM\\LS_HW_eCOM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
