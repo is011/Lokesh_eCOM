@@ -12,6 +12,7 @@ using LS_HW_eCOM;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using LS_HW_eCOM.Service;
 
 namespace LS_HW_eCOM
 {
@@ -32,6 +33,9 @@ namespace LS_HW_eCOM
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddTransient<ICategory, CategoryService>();
+            //services.AddTransient<IFood, FoodService>();
+            //services.AddTransient<IOrder, OrderService>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

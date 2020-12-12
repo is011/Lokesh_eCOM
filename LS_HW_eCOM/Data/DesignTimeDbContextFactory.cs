@@ -18,7 +18,7 @@ namespace LS_HW_eCOM
                 .Build();
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
             var connectionString = configuration.GetConnectionString("DefaultConnection");
-            builder.UseSqlServer(connectionString);
+            builder.UseSqlServer("Server=.;Database=aspnet-LS_HW_eCOM;Trusted_Connection=True;MultipleActiveResultSets=true");
             return new ApplicationDbContext(builder.Options);
         }
     }
