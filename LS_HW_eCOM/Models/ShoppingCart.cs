@@ -8,11 +8,11 @@ using System.Text;
 
 namespace LS_HW_eCOM.Models
 {
-	public class LS_HW_eCOMpingCart
+	public class ShoppingCart
 	{
 		private readonly ApplicationDbContext _context;
 
-		public LS_HW_eCOMpingCart(ApplicationDbContext context)
+		public ShoppingCart(ApplicationDbContext context)
 		{
 			_context = context;
 		}
@@ -20,14 +20,14 @@ namespace LS_HW_eCOM.Models
 		public string Id { get; set; }
 		public IEnumerable<ShoppingCartItem> ShoppingCartItems { get; set; }
 
-		public static LS_HW_eCOMpingCart GetCart(IServiceProvider services)
+		public static ShoppingCart GetCart(IServiceProvider services)
 		{
 			ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 			var context = services.GetService<ApplicationDbContext>();
 			string cartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
 
 			session.SetString("CartId", cartId);
-			return new LS_HW_eCOMpingCart(context) { Id = cartId };
+			return new ShoppingCart(context) { Id = cartId };
 		}
 
 		public bool AddToCart(Food food, int amount)
@@ -38,7 +38,7 @@ namespace LS_HW_eCOM.Models
 			}
 			
 			var ShoppingCartItem = _context.ShoppingCartItems.SingleOrDefault(
-				s => s.Food.Id == food.Id && s.LS_HW_eCOMpingCartId == Id);
+				s => s.Food.Id == food.Id && s.ShoppingCartId == Id);
             var isValidAmount = true;
 			if (ShoppingCartItem == null)
 			{
@@ -48,7 +48,7 @@ namespace LS_HW_eCOM.Models
                 }
                 ShoppingCartItem = new ShoppingCartItem
                 {
-                    LS_HW_eCOMpingCartId = Id,
+                    ShoppingCartId = Id,
                     Food = food,
                     Amount = Math.Min(food.InStock, amount)
 				};
@@ -75,7 +75,7 @@ namespace LS_HW_eCOM.Models
 		public int RemoveFromCart(Food food)
 		{
 			var ShoppingCartItem = _context.ShoppingCartItems.SingleOrDefault(
-				s => s.Food.Id == food.Id && s.LS_HW_eCOMpingCartId == Id);
+				s => s.Food.Id == food.Id && s.ShoppingCartId == Id);
 			int localAmount = 0;
 			if (ShoppingCartItem != null)
 			{
@@ -97,7 +97,7 @@ namespace LS_HW_eCOM.Models
 		public IEnumerable<ShoppingCartItem> GetShoppingCartItems()
 		{
 			return ShoppingCartItems ??
-				   (ShoppingCartItems = _context.ShoppingCartItems.Where(c => c.LS_HW_eCOMpingCartId == Id)
+				   (ShoppingCartItems = _context.ShoppingCartItems.Where(c => c.ShoppingCartId == Id)
 					   .Include(s => s.Food));
 		}
 
@@ -105,15 +105,15 @@ namespace LS_HW_eCOM.Models
 		{
 			var cartItems = _context
 				.ShoppingCartItems
-				.Where(cart => cart.LS_HW_eCOMpingCartId == Id);
+				.Where(cart => cart.ShoppingCartId == Id);
 
 			_context.ShoppingCartItems.RemoveRange(cartItems);
 			_context.SaveChanges();
 		}
 
-		public decimal GetLS_HW_eCOMpingCartTotal()
+		public decimal GetShoppingCartTotal()
 		{
-			return _context.ShoppingCartItems.Where(c => c.LS_HW_eCOMpingCartId == Id)
+			return _context.ShoppingCartItems.Where(c => c.ShoppingCartId == Id)
 				.Select(c => c.Food.Price * c.Amount).Sum();
 		}
 
