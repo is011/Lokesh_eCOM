@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LS_HW_eCOM.Food
+namespace LS_HW_eCOM
 {
     public class FoodSummaryModel
     {

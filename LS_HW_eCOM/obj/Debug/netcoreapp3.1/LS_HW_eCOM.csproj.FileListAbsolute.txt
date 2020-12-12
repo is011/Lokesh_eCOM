@@ -167,3 +167,15 @@ D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreap
 D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\staticwebassets\LS_HW_eCOM.StaticWebAssets.Manifest.cache
 D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\staticwebassets\LS_HW_eCOM.StaticWebAssets.xml
 D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\LS_HW_eCOM.genruntimeconfig.cache
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\LS_HW_eCOM.csprojAssemblyReference.cache
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Category\CreateEdit.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Category\Topic.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Food\CreateEdit.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Food\Index.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AccountSummary\Default.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\Shared\FoodSummary.cshtml.g.cs
+D:\Proffesional\Code Heap\Lokesh_eCOM\Lokesh_eCOM\LS_HW_eCOM\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs
